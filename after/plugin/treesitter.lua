@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = {"javascript","html","css","rust", "c", "lua", "vim", "vimdoc", "query" },
+  ensure_installed = {"javascript","html","css","rust", "c", "lua", "vim", "vimdoc", "query", "typescript" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -11,7 +11,6 @@ require'nvim-treesitter.configs'.setup {
 
   highlight = {
     enable = true,
-   disable = { "c", "rust" },
    
     disable = function(lang, buf)
         local max_filesize = 100 * 1024 -- 100 KB
