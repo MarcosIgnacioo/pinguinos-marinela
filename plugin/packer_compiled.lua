@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["cellular-automaton.nvim"] = {
+    loaded = true,
+    path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
+    url = "https://github.com/eandrju/cellular-automaton.nvim"
+  },
+  ["cloak.nvim"] = {
+    loaded = true,
+    path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/cloak.nvim",
+    url = "https://github.com/laytan/cloak.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -104,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -112,7 +127,7 @@ _G.packer_plugins = {
   harpoon = {
     loaded = true,
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/ThePrimeagen/harpoon"
+    url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -170,10 +185,21 @@ _G.packer_plugins = {
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["refactoring.nvim"] = {
+    loaded = true,
+    path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
+    url = "https://github.com/theprimeagen/refactoring.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    config = { "\27LJ\2\2C\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
     loaded = true,
@@ -184,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/home/whoreo/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
@@ -192,6 +223,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for lunarvim]], true)
 try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\24colorscheme horizon\bcmd\bvim\0", "config", "lunarvim")
 time([[Config for lunarvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\2C\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
